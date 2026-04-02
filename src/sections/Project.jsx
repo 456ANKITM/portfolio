@@ -33,8 +33,8 @@ const Project = () => {
       description:"A convenient car rental platform designed for quick and hassle-free bookings.Find, compare, and reserve vehicles بسهولة with a simple and efficient user interface.",
       image:"/projects/project4.png",
       tags: ["React", "Node JS", "Express", "MongoDB",],
-      link: "#",
-      github:"",
+      link: "https://car-rental-git-main-ankit-mishras-projects-e4c95bbd.vercel.app/",
+      github:"https://github.com/456ANKITM/car-rental-publisher-app",
     },
   ]
   return (
