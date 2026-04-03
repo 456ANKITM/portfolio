@@ -4,9 +4,9 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Project from './sections/Project'
 import Experience from './sections/Experience'
-import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Footer from './layout/Footer'
+import Blogs from './sections/Blogs'
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
         <About />
         <Project />
         <Experience />
-        <Testimonials />
+        <Blogs />
         <Contact />
       </main>
       <Footer />

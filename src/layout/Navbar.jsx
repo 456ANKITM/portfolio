@@ -17,7 +17,7 @@ const Navbar = () => {
     {href:"#about", label:"About"},
     {href:"#projects", label:"Projects"},
     {href:"#experience", label:"Experience"},
-    {href:"#testimonials", label:"Testimonials"},
+    {href:"#blogs", label:"Blogs"},
   ]
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass-strong py-3" : "bg-transparent py-5"} `}>
@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         {/* Call to action button  */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button size="sm"> <a href="/#contact">Contact Me</a></Button>
         </div>
 
         {/* Mobile Menu Button  */}
@@ -48,7 +48,7 @@ const Navbar = () => {
                 {navLinks.map((link, index) => (
                 <a href={link.href} key={index} onClick={()=>setMobileMenu(false)} className="text-lg text-muted-foreground hover:text-foreground py-2">{link.label}</a>
               ))}
-              <Button onClick={()=>setMobileMenu(false)}>Contact Me</Button>
+              <Button onClick={()=>setMobileMenu(false)}> <a href="/#contact">Contact Me</a></Button>
            </div>
        </div>}
       

@@ -3,22 +3,22 @@ import React from 'react'
 const Experience = () => {
   const experiences = [
 
-    {
-      period:"2024 - present",
-      role:"Cloud Engineer",
-      company: "Tech Nova",
-      description:"Maintaining a secure web applications on the cloud and managing databases on the cloud",
-      technologies:["AWS", "Microsoft Cloud"],
-      current: true
-    },
-    {
-      period:"2020 - 2024",
-      role:"Full Stack Developer",
-      company: "Tech Innovations Inc.",
-      description:"Leading full stack enginner worked as reviewing codes from junior developer and then merge it",
-      technologies:["React", "Node JS", "Express", "MongoDB Atlas"],
-      current:false
-    },
+    // {
+    //   period:"2024 - present",
+    //   role:"Cloud Engineer",
+    //   company: "Tech Nova",
+    //   description:"Maintaining a secure web applications on the cloud and managing databases on the cloud",
+    //   technologies:["AWS", "Microsoft Cloud"],
+    //   current: true
+    // },
+    // {
+    //   period:"2020 - 2024",
+    //   role:"Full Stack Developer",
+    //   company: "Tech Innovations Inc.",
+    //   description:"Leading full stack enginner worked as reviewing codes from junior developer and then merge it",
+    //   technologies:["React", "Node JS", "Express", "MongoDB Atlas"],
+    //   current:false
+    // },
     
     
   ]
@@ -30,8 +30,8 @@ const Experience = () => {
             <div className="max-w-3xl mb-16">
               <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fadein'>Career Journey</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animate-delay-100 text-secondary-foreground">
-                Experience that
-                <span className='font-serif italic font-normal text-white'> speaks volumes.</span>
+                Experience
+               
               </h2>
               <p className='text-muted-foreground animate-fade-in animate-delay-200'>
                A timeline of my professional growth, from curious begineer to senior engineer leading teams and building products at scale

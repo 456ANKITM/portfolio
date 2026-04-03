@@ -1,0 +1,4 @@
+- Remove Testimonials section from your pahge 
+- Upload Your Photo 
+- Add Your CV to the download button
+- Use Git hub and linked In Icons 

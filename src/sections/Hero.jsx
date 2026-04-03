@@ -9,21 +9,37 @@ import {
   GitBranch,
 } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaNodeJs,
+  FaReact,
+  FaGitAlt,
+} from "react-icons/fa";
+
+import {
+  SiExpress,
+  SiMongodb,
+  SiNextdotjs,
+  SiJavascript,
+  SiRedux,
+  SiCloudinary,
+  SiVercel
+} from "react-icons/si";
 
 const Hero = () => {
   const skills = [
-    "Node JS",
-    "Express",
-    "MongoDB Atlas",
-    "React",
-    "Next JS",
-    "Javascript",
-    "Redux",
-    "Cloudinary",
-    "Vercel",
-    "Git",
-    "Git hub"
-  ]
+    FaNodeJs,
+    SiExpress,
+    SiMongodb,
+    FaReact,
+    SiNextdotjs,
+    SiJavascript,
+    SiRedux,
+    SiCloudinary,
+    SiVercel,
+    FaGithub,
+    FaGitAlt,
+  ];
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden ">
       <div className="absolute inset-0">
@@ -69,12 +85,12 @@ const Hero = () => {
             {/* Headline  */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animate-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
+                MERN Stack Developer{" "}
+                <span className="text-primary glow-text"> Clean Code </span>
                 <br />
-                experiences with
+                Scalable Solutions
                 <br />
                 <span className="font-serif italic font-normal text-white"></span>
-                precision.
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animate-delay-200">
                 Hi, I'm Ankit Mishra - a full stack Developer specializing in
@@ -84,36 +100,39 @@ const Hero = () => {
             {/* CTAs  */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
-                Contact me <ArrowRight className="w-5 h-5" />{" "}
+                <a href="/#contact">Contact me </a>
               </Button>
-              <AnimatedBorderButton>
-                 <Download className="w-5 h-5" /> Download CV
-              </AnimatedBorderButton>
+              <a href="/public/CV.pdf" download>
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links  */}
             <div className="flex  items-center gap-4 animate-fade-in animate-delay-400">
-                 
-                 
-              <span className="text-sm text-muted-foreground"> Follow Me:  </span>
-                {[
-                  { icon: GitBranch, href: "https://github.com/456ANKITM" },
-                  {
-                    icon: GitBranch,
-                    href: "https://www.linkedin.com/in/ankit-mishra-8537433aa/",
-                  },
-                ].map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
-             
+              <span className="text-sm text-muted-foreground">
+                {" "}
+                Follow Me:{" "}
+              </span>
+              {[
+                { icon: FaGithub, href: "https://github.com/456ANKITM" },
+                {
+                  icon: FaLinkedin,
+                  href: "https://www.linkedin.com/in/ankit-mishra-8537433aa/",
+                },
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
           {/* Right Column - Profile Image  */}
@@ -122,43 +141,46 @@ const Hero = () => {
             <div className="relative max-w-md mx-auto">
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
-                <img src="/profile-photo.jpg" alt="Ankit Mishra" 
-                className="w-full aspect-[4/5] object-cover rounded-2xl " />
+                <img
+                  src="/public/profile-photo.png"
+                  alt="Ankit Mishra"
+                  className="w-full aspect-[4/5] object-cover rounded-2xl "
+                />
                 {/* Floating Badge  */}
-                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">Available for work</span>
+                    <span className="text-sm font-medium">
+                      Available for work
+                    </span>
                   </div>
-                 </div>
+                </div>
                 {/* Stats Badge  */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animate-delay-500">
+                {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animate-delay-500">
                   <div className="text-2xl font-bold text-primary ">5+</div>
                   <div className="text-xs text-muted-foreground">Years Experience</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
         {/* Skills Section  */}
         <div className="mt-20 animate-fade-in animation-delay-600 ">
-          <p className="text-sm text-muted-foreground mb-6 text-center">Tech Stack</p>
+          <p className="text-sm text-muted-foreground mb-6 text-center">
+            Tech Stack
+          </p>
           <div className="relative overflow-hidden ">
             <div className="flex animate-marquee">
-            {[...skills, ...skills].map((skill, index) => (
-              <div key={index} className="flex-shrink-0 px-8 py-4 "> 
-              <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors ">{skill}</span> 
-              </div>
-            ))}
-            </div>
+  {[...skills, ...skills].map((Skill, index) => (
+    <div key={index} className="flex-shrink-0 px-8 py-4">
+      <Skill className="w-20 h-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors" />
+    </div>
+  ))}
+</div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animate-delay-800">
-          <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"></a>
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-6 h-6 animate-bounce" />
-      </div>
+      
     </section>
   );
 };

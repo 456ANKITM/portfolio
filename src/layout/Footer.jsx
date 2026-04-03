@@ -1,9 +1,9 @@
-import { GitBranch } from "lucide-react";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: GitBranch, href: "#", label: "GitHub" },
-  { icon: GitBranch, href: "#", label: "LinkedIn" },
-  { icon: GitBranch, href: "#", label: "Twitter" },
+  { icon: FaGithub, href: "https://github.com/456ANKITM", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/ankit-mishra-8537433aa/", label: "LinkedIn" },
 ];
 
 const footerLinks = [
@@ -64,7 +64,7 @@ export const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-white/10 text-center text-xs text-muted-foreground flex items-center justify-center gap-1">
-          Made with <GitBranch className="w-4 h-4 text-red-500" /> by Ankit
+          {/* Made with <GitBranch className="w-4 h-4 text-red-500" /> by Ankit */}
         </div>
       </div>
     </footer>
