@@ -2,3 +2,4 @@
 - Upload Your Photo 
 - Add Your CV to the download button
 - Use Git hub and linked In Icons 
+- There has been some issues with our profile image and CV will solve that later and we need to work on our project to showcase it 

@@ -5,28 +5,20 @@ import AnimatedBorderButton from '../components/AnimatedBorderButton'
 const Project = () => {
   const projects = [
     {
-      title: "Realtime-Chat Application" ,
-      description:"A fast and intuitive chat application designed for seamless real-time communication.Connect instantly, share messages effortlessly, and enjoy a smooth, responsive user experience across devices.",
-      image:"/projects/project1.png",
-      tags: ["React", "Node JS", "Express", "MongoDB", "socket.io"],
-      link: "#",
-      github:"",
-    },
-    {
       title: "E-commerce Clothing" ,
       description:"A modern online clothing store offering a seamless shopping experience with stylish collections.Browse, select, and shop effortlessly with a fast, secure, and user-friendly interface.",
       image:"/projects/project2.png",
       tags: ["React", "Node JS", "Express", "MongoDB", "Payment Gateway", "Cloudinary"],
-      link: "#",
-      github:"",
+      link: "https://e-commerce-clothing-frontend.vercel.app/",
+      github:" https://github.com/456ANKITM/E-commerce-Clothing",
     },
     {
       title: "Online Library" ,
       description:"A digital library platform that provides easy access to a wide range of books and resources.Explore, read, and manage your collection anytime with a smooth and intuitive experience.",
       image:"/projects/project3.png",
       tags: ["React", "Node JS", "Express", "MongoDB", "Cloudinary"],
-      link: "#",
-      github:"",
+      link: "https://e-library-phi-jet.vercel.app/",
+      github:"https://github.com/456ANKITM/E-library",
     },
     {
       title: "Car Rental" ,
